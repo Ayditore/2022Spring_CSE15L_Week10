@@ -37,3 +37,24 @@ cp cse15lsp22-markdown-parser/script.sh my-markdown-parser/
 
 [**Link to 201.md testing case**](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/194.md)
 
+---
+
+## The expalantion on _194.md_
+We can able to find the expected output by using the preview function of markdown language:
+
+![image]()
+
+* From the `vimdiff`, we can find two different results of our implementations on **194.md**.
+
+![image]()
+
+* According to the preview that we saw, the latest shared version has the correct implementation but my implementation is not, as it should output `[url]`.
+
+* I think the reason why the shared version passes the test because it uses the `Map` interface to carry out the method of `getLinks`. After it gets a pair of brackets, the program will continue to find the next and first-appeared open and closing parentheses in the same line, if not found, return `[]`, if found, return the link inside the parentheses, therefore the shared version can return the correct output as expected.
+
+* For my implementation, previously I didn't consider too much on this situation, so the bug is that my program automatically filtered this test case to "no link" cases. I think improvement and modification can be made in the while loop in the `getLinks` method. I can add more condition on different if statements to make no influence when there is different characters and symbols between the first pair of brackets and the first pair of parentheses.
+
+![image]()
+
+---
+
