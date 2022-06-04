@@ -8,32 +8,32 @@ In this report, I would like to show you how I managed to find and evaluate two 
 
     Firstly, I cloned the updated version of Markdown-parser using `git clone https://github.com/nidhidhamnani/markdown-parser.git cse15lsp22-markdown-parser` command.  
 
-    After using `vim` to get into the _script.sh_ file, I inserted the command `echo` which prints the filename of each file in the _test-files_ folder, before running the test.  
+After using `vim` to get into the _script.sh_ file, I inserted the command `echo` which prints the filename of each file in the _test-files_ folder, before running the test.  
 
-    ![insert_echo](insert_echo.png)  
+![insert_echo](insert_echo.png)  
 
-    Then I used `bash script.sh > results.txt` command to store all the results into a txt file. Then use `cat results.txt` to check the contents.  
+Then I used `bash script.sh > results.txt` command to store all the results into a txt file. Then use `cat results.txt` to check the contents.  
 
-    ![create_txt](bash_txt.png)
+![create_txt](bash_txt.png)
 
-    ![cat_txt](cat_txt.png)
+![cat_txt](cat_txt.png)
 
-    To comparing different results of test cases, I cloned my own implementation of markdown-parser using `git clone https://github.com/Ayditore/markdown-parser.git (my markdown parese repo http) my-markdown-parser` command.
+To comparing different results of test cases, I cloned my own implementation of markdown-parser using `git clone https://github.com/Ayditore/markdown-parser.git (my markdown parese repo http) my-markdown-parser` command.
 
-    Then, I copied the test-files folder and the script.sh to my implementation folder using the following command
+Then, I copied the test-files folder and the script.sh to my implementation folder using the following command
 
-    ```
-    cp -r test-files my-markdown-parser/
-    cp cse15lsp22-markdown-parser/script.sh my-markdown-parser/
-    ```
+```
+cp -r test-files my-markdown-parser/
+cp cse15lsp22-markdown-parser/script.sh my-markdown-parser/
+```
 
-    Then, I ran scrpit bash commands again and stored the new test results into _results.txt_ in _my-markdown-parser_ folder.
+Then, I ran scrpit bash commands again and stored the new test results into _results.txt_ in _my-markdown-parser_ folder.
 
-    Then compare these two txt files using the command of `vimdiff`, and we can see the different results due to different implementations of markdown-parser:
+Then compare these two txt files using the command of `vimdiff`, and we can see the different results due to different implementations of markdown-parser:
 
-    ![vim_dif](vim_dif.png)
+![vim_dif](vim_dif.png)
 
-    Based on the `vimdiff` command result, I picked _194.md_ and _342.md_ to be the two bugs that will be evaluated in the following section.
+Based on the `vimdiff` command result, I picked _194.md_ and _342.md_ to be the two bugs that will be evaluated in the following section.
 
 ---
 
