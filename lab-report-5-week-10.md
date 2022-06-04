@@ -60,13 +60,9 @@ cp cse15lsp22-markdown-parser/script.sh my-markdown-parser/
 
     According to the preview, the latest shared version has the correct implementation, as it should output `[url]`. And my own implementation is incorecct as it output a empty result.
 
-* Describe the bug
+* Describe the bug and Where can I fix it
 
-    I think the reason why the shared version passes the test because it uses the `Map` interface to facilitate `getLinks` method. After it gets a pair of brackets, the program will continue to find the next and first-appeared open and closing parentheses in the same line, if not found, return `[]`, if found, return the link inside the parentheses, therefore the shared version can return the correct output as expected.
-
-* Where can I fix it
-
-    For my implementation, previously I didn't consider too much on this situation, so the bug is that my program automatically filtered this test case to "no link" cases. I think improvement and modification can be made in the while loop in the `getLinks` method. I can add more condition on different if statements to make no influence when there is different characters and symbols between the first pair of brackets and the first pair of parentheses.
+       I think the bug in my implementationi is caused by the problem which the if statements filter this case to "no link" cases which finally output a empty result. I think the bug can be fixed by improving the while loop in `getLinks` method. I can add more condition on different if statements to make no influence when there is different characters and symbols between the first pair of brackets and the first pair of parentheses.
 
     ![image]()
 
