@@ -46,7 +46,7 @@ In this report, I would like to show you how I managed to find and evaluate two 
 
 ## The expalantion on _194.md_
 
-* **Expected 0utput of _194.md_**
+* **Expected output of _194.md_**
 
     The expected output of 194.md can be checked by using [Commanmark website](https://spec.commonmark.org/dingus/)
 
@@ -73,7 +73,7 @@ In this report, I would like to show you how I managed to find and evaluate two 
 
 ## The expalantion on _342.md_
 
-* **Expected 0utput of _342.md_**
+* **Expected output of _342.md_**
 
     The expected output of _342.md_ can be checked by using [Commanmark website](https://spec.commonmark.org/dingus/)
 
